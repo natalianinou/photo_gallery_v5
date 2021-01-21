@@ -3,52 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Gallery</title>
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <title>Photo Gallery</title>
 </head>
+
 <body>
-    <div>
-        <input type="text" id="search" name="searchgallery" placeholder="Search"
-    </div>
+    <!--Search Box-->
+    <form id="form" role="search">
+        <input type="search" name="search" id="search" placeholder="Search"     
+        aria-label="Search through site content">
+     </form>
+   
     <main>
-        <div class="grid">
-                <a href="#">
-                    <img class=pic src="photos/01.jpg" alt="straw field">
-                </a>
-                <a href="#">
-                    <img class=pic src="photos/02.jpg" alt="lake mountain">
-                </a>
-                <a href="#">
-                    <img class=pic src="photos/03.jpg" alt="forest view">
-                </a>
-                <a href="#">
-                    <img class=pic src="photos/04.jpg" alt="Snow landscape ">
-                </a>
-                <a href="#">
-                    <img class=pic src="photos/05.jpg" alt="rock mountains">
-                </a>
-                <a href="#">
-                    <img class=pic src="photos/06.jpg" alt="Tree Garden">
-                </a>
-                <a href="#">
-                    <img class=pic src="photos/07.jpg" alt="Amazon Jungle landscape">
-                </a>
-                <a href="#">
-                    <img class=pic src="photos/08.jpg" alt="Dune landscape">
-                </a>
-                <a href="#">
-                    <img class=pic src="photos/09.jpg" alt="Trees in a garden">
-                </a>
-                <a href="#">
-                    <img class=pic src="photos/10.jpg" alt="Beach Coast landscape sunset">
-                </a>
-                <a href="#">
-                    <img class=pic src="photos/11.jpg" alt="Landscape jungle photo taken inside cove">
-                </a>
-                <a href="#">
-                    <img class=pic src="photos/12.jpg" alt="Flower fields in front of snow mountains">
-                </a>
+    <!--Grid-->
+    <div class="grid">
+        <!-- 1.Hay Bales-->
+            <a href="photos/01.jpg" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+                <img src="photos/thumbnails/01.jpg" class="gallery_img" alt="Hay bales"></a>
+        <!-- 2.Hay Bales-->        
+            <a href="photos/02.jpg" data-caption="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+                <img src="photos/thumbnails/02.jpg" class="gallery_img" alt="Lake">
+            </a>
+        <!-- 3.Canyon-->  
+            <a href="photos/03.jpg" data-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+                <img src="photos/thumbnails/03.jpg" class="gallery_img" alt="Canyon">
+            </a>
+        <!-- 4.Iceberg-->     
+            <a href="photos/04.jpg" data-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+                <img src="photos/thumbnails/04.jpg" class="gallery_img" alt="Iceberg">
+            </a>
+        <!-- 5.Desert--> 
+            <a class="item" href="photos/05.jpg" data-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+                <img src="photos/thumbnails/05.jpg" class="gallery_img" alt="Desert">
+            </a>
+        <!-- 6.Fall--> 
+            <a class="item" href="photos/06.jpg" data-caption="Fall is coming, I love when the leaves on the trees start to change color.">
+                <img src="photos/thumbnails/06.jpg" class="gallery_img" alt="Fall">
+            </a>
+        <!-- 7.Plantation--> 
+            <a class="item" href="photos/07.jpg" data-caption="I drove past this plantation yesterday, everything is so green!">
+                <img src="photos/thumbnails/07.jpg" class="gallery_img" alt="Plantation">
+            </a>
+        <!-- 8.Dunes--> 
+            <a class="item" href="photos/08.jpg" data-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+                <img src="photos/thumbnails/08.jpg" class="gallery_img" alt="Dunes">
+            </a>
+        <!-- 9. Countrysade Lane--> 
+            <a class="item" href="photos/09.jpg" data-caption="We enjoyed a quiet stroll down this countryside lane.">
+                <img src="photos/thumbnails/09.jpg" class="gallery_img" alt="Countrysade Lane">
+            </a>
+        <!-- 10.Sunset--> 
+            <a class="item" href="photos/10.jpg" data-caption="Sunset at the coast! The sky turned a lovely shade of orange.">
+                <img src="photos/thumbnails/10.jpg" class="gallery_img" alt="Sunset">
+            </a>
+        <!-- 11.Cave--> 
+            <a class="item" href="photos/11.jpg" data-caption="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+                <img src="photos/thumbnails/11.jpg" class="gallery_img" alt="Cave">
+            </a>
+        <!-- 12. Bluebells--> 
+            <a class="item" href="photos/12.jpg" data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+                <img src="photos/thumbnails/12.jpg" class="gallery_img" alt="Bluebells">
+            </a>
+        
         </div>
+
+
+
+
+    </div>
     </main>
+
+    <!--JavaScript links-->
+    <script src="js/baguetteBox.min.js"></script>
+  <script src="js/searchFilter.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
