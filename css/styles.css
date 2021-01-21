@@ -37,27 +37,20 @@ form input {
 /*-----  Gallery  --------*/
 main {
     margin: 0 auto;
-    width: 75%;
+    width: 68%;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-items: center;
-    padding: 0;
-    grid-gap: 15px;
+    grid-gap: 1.5em;
 
 }
 
-.grid img {
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    /* So the images can fill the H & W of it's box. Maintaining aspect ratio. */
-    object-fit: cover;
 
 
-}
+
+
 
 img:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
