@@ -37,19 +37,20 @@ form input {
 /*-----  Gallery  --------*/
 main {
     margin: 0 auto;
-    width: 68%;
+    width: 80%;
 }
 
 .grid {
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1.5em;
-
+    justify-items: center;
 }
 
 
 
-
+/*-----  Img style  --------*/
 
 
 img:hover {
